@@ -3,148 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url('https://encrypted-tn0.static.com/images?q=tbn:ANd9GcTLL8T93vMsqXnH4eDyj6DAwdkMFjy4fPqAwQ&s') no-repeat center center fixed;
-            background-size: cover;
-         .container{
-           padding: 20px;
-           margin: 20px;
-         }
-        .con{
-            border:5px solid rgba(0, 0, 0, 0.918);
-            margin: 30px;
-            padding: 30px;
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ <title>Document</title>
+ <style>
+    body{
+        background-color: rgb(172, 54, 54);
+        margin: 50px;
     
-        }
-        img{
-            display: block;
-            margin:auto;
-            width:20%;
-            height:vh;
-            padding: 0%;
-        }
-        input[type="text"]{
-            width:100%;
-            height:35px;
-        }
-        label{
-            font-size: 25px;
-            margin:0%;
-            padding: 2px;
-
-        }
-        .green{
-            background-color: rgb(34, 221, 34);
-            color:rgba(255, 255, 255, 0.925);
-            width:100%;
-            margin: 5px;
-           padding:5px; 
-            height:50px;
-            font-size:30px;
-        }
-       
-        .five{
-            position: absolute;
-            bottom: 100px;;
-            right:20px;
-        }
-        
-        input[type="checkbox"]{
-            padding: 2px;
-            border:2px solid black;
-            height:20px;
-            width:20px;
-
-        }
-        .red{
-            background-color: rgb(223, 12, 12);
-            color:rgba(255, 255, 255, 0.973);
-            width:70px;
-            height:50px;
-            font-size:20px;
-            padding: 2px;
-            border: 2px solid black;
-
-        }
-    
-        footer{
-            background-color: rgb(240, 233, 233);
-            height:100px;
-            width:100%;
-            margin:2px solid black;
-            padding:20px;
-            box-sizing: border-box;
-            
-        }
-    
-         .options {
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .options a {
-            margin-top: 10px;
-            text-decoration: none;
-             color: rgb(63, 16, 151);
-             font-size: 15px;
-        }
-
-         .options a:hover {
-            color: #f05006e0;
-         }
-            @media only screen and (max-width: 600px) and (min-width:450px) {
-            .container{
-                padding: 10px;
-                width: 70%;
-                height:vh;
-                background-color: #0afa5aee;
-            }
-        }
-        @media only screen and (max-width: 900px) and (min-width:600px) {
-            .container {
-                padding: 40px;
-                width: 100%;
-                background-color: rgb(223, 70, 228);
-            }
-
-        
-    </style>
+    }
+    .container{
+        background-color: rgba(126, 211, 197, 0.932);
+        box-shadow: 2px 6px 20px #111;
+      
+    }
+    p{
+        font-size: large;
+    }
+ </style>
 </head>
 <body>
-    <div class=" container">
-        <h1>Login form</h1>
-    <div class="con">
-        <div>
-        <img src="data:image/jpeg;base64,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">
-        <form  action="#">   
-        <label ><b>Username</b></label><br>
-        <input type="text" name="name" value="Enter Username "><br>
-        <label ><b>Password</b></label><br>
-        <input type="Text" name="password" value=" Enter password"><br>
-        <div>
-        <button class="green">Login</button><br>
+    <div class="container my-2 w-50 text-drak p-2">
+        <div class="Register">
+            <h1>Register</h1>
+            <p>create your account it's free only taken  a minute</p>
         </div>
-        <div>
-            <input type="checkbox" id="remember" name="remember">
-            <label for="remember">Remember Me</label>
-        </div>
-    </form>
-</div>
-<footer>
-    <div class="options">
-        <button class="red">cancel</button>
+        <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div><br>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose</option>
+                <option>Tamilnadu</option>
+                <option>Kerala</option>
+                <option>Karnataka</option>
+                <option>Bihar</option>
+                <option>Gujarat</option>
+
+              </select>
+            </div>
         
-        <a  href="#">Forgot passward?</a>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I accept the terms of use & privacy policy
+                </label>
+              </div>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Sign in</button>
+              </div>
+          </form>
     </div>
-</footer>
-    
-</div>
-</div>
 </body>
 </html>
