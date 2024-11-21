@@ -4,67 +4,485 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <style>
-   *{
-     font-family: cursive;
-    } 
-    body{
-        background-color: rgb(172, 54, 54);
-        margin-top:40px;
+  body{
+    font-family:cursive;  
+  }
+   .navbar-header
+    {
+        color:rgb(12, 12, 12);
+        font-weight: bolder;
+        font-size:35px;
+        font-family: cursive;
+    }
+    .nav-link
+    {
+        color:rgb(12, 12, 12);
+    }
+    .carousel img{
+        width:100%;
+        height:400px;
+    }
     
+    #aboutsec
+    {
+        margin-left:100px;
+        padding-top:40px;
     }
-    #bor{
-        background-color: rgba(126, 211, 197, 0.932);
-        box-shadow: 2px 6px 20px #111;
-      
+
+    h3{
+        padding-top: 100px;
+        margin-left:100px;
+        font-weight: bolder;
+        font-size: 45px;
     }
-    p{
-        font-size: large;
+    .card-text{
+      margin-left:100px;
+
     }
-    label{
-        font-size:20px ;
+    .btn1
+    {
+        border-radius: 50px;
+        background-color: rgb(238, 148, 12);
+        padding: 15px 55px;
+        padding-left:40px;
+        font-size: 20px;
+        margin: 20px 100px ;
     }
- </style>
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="row p-3">
-            <div class="col-12 col-lg-6 m-auto py-3" id="bor">   
-            <h1>Register</h1>
-            <p>create your account it's free only taken  a minute</p>
-            <form action="#">
-                <div class="from-group mb-3">
-                    <label >First name</label>
-                    <input type="text" class="form-control" name="First name"id="First name" placeholder="First Name">
-                 </div>
-               <div class="from-group mb-3">
-                <label >Last name</label>
-                <input type="text" class="form-control" name="Last name"id="Last name" placeholder="Last Name">
-             </div>
-             <div class="from-group mb-3">
-                <label >Email address</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" >
-             </div>
-               <div class="from-group mb-3">
-                <label >password</label>
-                <input type="password" class="form-control" name="passward" id="passward"placeholder="Password" >
-               </div>
-               <div class="col-12">
-                <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck">
-                    I accept the <a href="#">terms of use</a> & <a href="#">privacy policy</a>
-                  </label>
-                </div>
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary py-2" type="submited">Sign in</button>
-            </from>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+         
+          <span class="navbar-header">MEN’S <span style="color: rgb(173, 27, 16);">FASHION</span></span>
+          <ul class="nav justify-content-end">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#aboutsec">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#productsec">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#featuresec">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contactus">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.zobello.com/cdn/shop/files/DENIM-JACKETS-min_1512x.jpg?v=1613717547" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        <div class="carousel-item">
+            <img src="https://thomasscott.in/wp-content/uploads/2024/08/Jeans-Slider-Banner-2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+          <div class="carousel-item">
+            <img src="https://thomasscott.in/wp-content/uploads/2024/06/Textured-Shirt-Website-Version.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
         </div>
         </div>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </nav>
+    <div class="card m-auto" style="max-width: 940px;" id="aboutsec">
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img id="about" src="https://img.freepik.com/free-photo/young-man-wearing-dark-shirt-jeans-carries-many-bags-go-shopping_1150-27743.jpg?ga=GA1.1.118019296.1731940882&semt=ais_hybrid" class="img-fluid rounded-start" alt="..." width="650px" height="750px">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h3 class="card-title"> Men’s Fashion Trend Look </h3>
+            <p class="card-text">Menswear refers to clothing and accessories designed specifically for men. It includes a wide range of clothing items such as suits, pants, shirts, jackets, t-shirts, and more. The styles, colors, and designs of men's clothing have evolved over time, reflecting changes in fashion trends and societal norms
+              The truth about mens clothing is that most men care about how they look almost as much as, and sometimes even more than, women do.</p>
+            <button type="button" class="btn1 btn-success" >Read More</button>
+          </div>
+        </div>
+      </div>
     </div>
+    <section class="Features" id="featuresec">
+    
+    <div class="container">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-5 m-auto text-center">
+            <h1>Our Features</h1>
+            <p>E-commerce continues to experience consistent growth, with fashion being one of the sectors experiencing the highest demand online
+              Consumers seek convenience and practicality in their shopping experiences, creating a fertile ground for the success of menswear e-commerce ventures
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 ">
+              <img src="https://media.istockphoto.com/id/181983750/photo/young-business-man-looking-down.jpg?s=612x612&w=0&k=20&c=AhKDoaxjJdkAVNr6-pfReOUHJeW7UzUSaADCNjJEcLQ=" class="card-img-top"height=550px width=150px;                   alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title ">NEW LOOK NEW STYLE</h5>
+                <p >Our purpose is “to inspire that New Look feeling”We aspire to be the go-to destination for fashion that makes her feel like her very best self, whenever, wherever.</p>
+                <a href="#" class="btn btn-outline-success pt-2 " style="border-radius: 50px; ">Read More</a>
+             </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card h-100 py-4">
+              <img src="https://www.gowebbaby.com/cdn/shop/products/web-banner-thumb_83065f41-50fc-4a1d-a6e5-98f6ed64a0cf_334x.jpg?v=1620807625" class="card-img-top" height=550px width=150px;alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title ">NEW COLLECTION(50% OFFER)</h5>
+                <p>Shop men's linen clothing with up to 50% off. Explore a wide range of casual, formal, and ethnic styles online at Linen Club.</p>
+                <a href="#" class="btn btn-outline-success pt-2" style="border-radius: 50px; ">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://plus.unsplash.com/premium_photo-1658526969046-fe467489acdd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZSUyMGRlbGl2ZXJ5JTIwYWR2ZW5zaW9tZW50JTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" class="card-img-top"height=550px width=150px; alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">CASH ON DELIVERY</h5>
+                <p>Cash on delivery (COD) is a type of transaction where the recipient pays for a good at the time of delivery rather than using credit COD can help build customer trust and loyalty, and reduce concerns about online fraud</p>
+                <a href="#" class="btn btn-outline-success pt-2" style="border-radius: 50px; ">Read More</a>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+     
+    </div>
+  </div>
+</section>
+      <section class="product" id="productsec">
+        <div class="container  py-5">
+          <div class="row py-5">
+            <div class="col-4 m-auto text-start">
+              <h1>Our Products</h1>
+              <p>The cloth for paint splatter t shirt men's we use is Biowash Cotton ,180 GSM, Combed yarn.It is quite thick and durable.</p>
+            </div>
+              <div class="col text-end">
+              <div class="btn-group justify-content-end">
+                <a href="#shirtbrand"" class="btn btn-success active">Shirt</a>
+                <a href="#pantbrand" class="btn btn-outline-success active">pant</a>
+                <a href="#T-shirtbrand" class="btn btn-outline-success active ">T-shirt</a>
+              </div>
+              </div>
+            <section id="shirtbrand">
+              <div class="row ">
+                <div class="col-lg-4 text-center">
+                <div class="card border-0 bg-light">
+                  <div class="card-body">
+                   <img src="https://images.bewakoof.com/t640/men-s-pink-black-checked-shirt-654773-1731580980-1.jpg" class="img-fluid"  alt="...">
+                  </div>
+                  <h6>Campus Sutra</h6>
+                  <p>Men's Pink & Black Checked Shirt</p>
+                  <p> ₹500  <span style="color: rgb(0, 181, 58)">55% offer</span></p>
+                </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="card border-0 bg-light">
+                    <div class="card-body">
+                         <img src="https://images.bewakoof.com/t640/men-s-beige-black-checked-oversized-shirt-650004-1728285344-1.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <h6>Chimpaaanzee</h6>
+                    <p>Men's Beige & Black Checked Oversized </p>
+                    <p>₹799 <span style="color: rgb(0, 181, 58);">30% offer</span></p>
+                    
+                  </div>
+                  </div>
+                  <div class="col-lg-4 text-center">
+                    <div class="card border-0 bg-light">
+                      <div class="card-body">
+                        <img src="https://images.bewakoof.com/t640/men-s-cream-black-checked-oversized-shacket-649919-1727962774-1.JPG" class="img-fluid"  alt="...">
+                      </div>
+                      <h6>Chimpaaanzee</h6>
+                      <p>Men's White & Black Checked Oversized</p>
+                      <p>₹899 <span style="color:  rgb(0, 181, 58);">40% offer</span></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="card border-0 bg-light">
+                        <div class="card-body">
+                             <img src="https://images.bewakoof.com/t640/men-s-brown-all-over-printed-oversized-plus-size-shirt-628997-1702972692-1.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <h6>Instafab Plus</h6>
+                        <p>Men's Brown & Black All Over Printed Ov</p>
+                        <p>₹999 <span style="color:  rgb(0, 181, 58);">20% offer</span></p>
+                      </div>
+                      </div>
+                      <div class="col-lg-4 text-center">
+                        <div class="card border-0 bg-light">
+                          <div class="card-body">
+                               <img src="https://images.bewakoof.com/t640/men-s-blue-one-piece-graphic-printed-oversized-shirt-634254-1724051939-1.jpg" class="img-fluid"  alt="...">
+                          </div>
+                          <h6>bewakoof x one piece</h6>
+                          <p>Men's Skipper Blue One Piece Graphic Pr</p>
+                          <p>₹699 <span style="color:  rgb(0, 181, 58);">50% offer</span></p>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                          <div class="card border-0 bg-light">
+                            <div class="card-body">
+                                 <img src="https://images.bewakoof.com/t640/men-s-chalk-white-blue-embroidered-shirt-654772-1731581341-1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <h6>Campus Sutra</h6>
+                            <p>Men's Chalk White & Blue Embroidered</p>
+                            <p>₹670 <span style="color:  rgb(0, 181, 58);">30% offer</span></p>
+                          </div>
+                          </div>
+                          <div class="col-lg-4 text-center">
+                            <div class="card border-0 bg-light">
+                              <div class="card-body">
+                                   <img src="https://images.bewakoof.com/t640/men-s-brown-textured-crochet-shirt-649642-1727268012-1.jpg" class="img-fluid"  alt="...">
+                              </div>
+                              <h6>Rigo</h6>
+                              <p>Men's Brown Textured Crochet Shirt</p>
+                              <p>₹720<span style="color:rgb(0, 181, 58);">  10% offer</span></p>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                              <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                     <img src="https://images.bewakoof.com/t640/men-s-white-black-striped-shirt-white-648455-1725601895-1.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <h6>Chimpaaanzee</h6>
+                                <p>Men's White & Black Striped Shirt</p>
+                                <p>₹718<span style="color:rgb(0, 181, 58);">  35% offer</span></p>
+                              </div>
+                              </div>
+                              <div class="col-lg-4 text-center">
+                                <div class="card border-0 bg-light">
+                                  <div class="card-body">
+                                       <img src="https://images.bewakoof.com/t640/men-s-blue-all-over-floral-printed-oversized-shirt-648560-1726474516-1.JPG" class="img-fluid" alt="...">
+                                  </div>
+                                  <h6>Recast</h6>
+                                  <p>Men's Blue All Over Floral Printed Oversiz</p>
+                                  <p>₹650<span style="color:rgb(0, 181, 58);">  25% offer</span></p>
+                                </div>
+                                </div>
+              </div>
+          </div>
+          </div>
+        </section>    
+        <section id="pantbrand">
+          <div class="container">
+          <div class="row ">
+            <div class="col-lg-4 text-center">
+            <div class="card border-0 bg-light">
+              <div class="card-body">
+               <img src="https://images.bewakoof.com/t640/men-s-black-super-loose-fit-cargo-joggers-646429-1731311277-1.jpg" class="img-fluid"  alt="...">
+              </div>
+              <h6>Bewakoof Air® 1.0</h6>
+              <p>Men's Black Super Loose Fit Cargo Joggers</p>
+              <p> ₹999<span style="color: rgb(0, 181, 58)"> 33% offer</span></p>
+            </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="card border-0 bg-light">
+                <div class="card-body">
+                     <img src="https://images.bewakoof.com/t640/men-s-brown-oversized-cargo-joggers-604230-1721970519-1.jpg" class="img-fluid" alt="...">
+                </div>
+                <h6>Bewakoof Air® 1.0</h6>
+                <p>Men's Brown Oversized Cargo Joggers</p>
+                <p>₹900<span style="color: rgb(0, 181, 58);"> 30% offer</span></p>
+                
+              </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="card border-0 bg-light">
+                  <div class="card-body">
+                    <img src="https://images.bewakoof.com/t640/men-s-blue-wide-leg-cargo-pants-628752-1719224772-1.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <h6>Bewakoof®</h6>
+                  <p>Men's Blue Wide Leg Cargo Pants</p>
+                  <p>₹669 <span style="color:  rgb(0, 181, 58);">70% offer</span></p>
+                </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="card border-0 bg-light">
+                    <div class="card-body">
+                         <img src="https://images.bewakoof.com/t640/men-s-grey-oversized-pants-628746-1710335657-1.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <h6>Bewakoof®</h6>
+                    <p>Men's Grey Oversized Cargo Carpenter </p>
+                    <p>₹499 <span style="color:  rgb(0, 181, 58);">40% offer</span></p>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 text-center">
+                    <div class="card border-0 bg-light">
+                      <div class="card-body">
+                           <img src="https://images.bewakoof.com/t640/men-s-teal-blue-wide-leg-korean-pants-633827-1717425350-1.jpg" class="img-fluid"  alt="...">
+                      </div>
+                      <h6>bewakoof x star wars</h6>
+                      <p>Men's Teal Blue Wide Leg Korean Pants</p>
+                      <p>₹850<span style="color:  rgb(0, 181, 58);">25% offer</span></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="card border-0 bg-light">
+                        <div class="card-body">
+                             <img src="https://images.bewakoof.com/t640/men-s-green-beige-color-block-loose-comfort-fit-cargo-pants-649658-1727333716-1.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <h6>Klothfit</h6>
+                        <p>Men's Beige & Green Color Block Loose </p>
+                        <p>₹770 <span style="color:  rgb(0, 181, 58);">  55% offer</span></p>
+                      </div>
+                      </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    </section>
+        <section id="T-shirtbrand">
+          <div class="container">
+          <div class="row ">
+            <div class="col-lg-4 text-center">
+            <div class="card border-0 bg-light">
+              <div class="card-body">
+               <img src="https://images.bewakoof.com/t640/men-s-red-white-graphic-printed-oversized-hoodies-644547-1730989903-1.jpg" class="img-fluid"  alt="...">
+              </div>
+              <h6>bewakoof x marvel</h6>
+              <p>Men's Red & White Graphic Printed Over</p>
+              <p> ₹1099<span style="color: rgb(0, 181, 58)"> 10% offer</span></p>
+            </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="card border-0 bg-light">
+                <div class="card-body">
+                     <img src="https://images.bewakoof.com/t640/men-s-black-wolverine-graphic-printed-oversized-t-shirt-642518-1731388372-1.jpg" class="img-fluid" alt="...">
+                </div>
+                <h6>bewakoof x marvel</h6>
+                <p> Men's Black Wolverine Graphic Printed Ov</p>
+                <p>₹500<span style="color: rgb(0, 181, 58);"> 30% offer</span></p>
+                
+              </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                <div class="card border-0 bg-light">
+                  <div class="card-body">
+                    <img src="https://images.bewakoof.com/t640/men-s-red-moon-rider-graphic-printed-oversized-t-shirt-502017-1715257498-1.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <h6>Bewakoof®</h6>
+                  <p>Men's Red Moon Rider Graphic Printed </p>
+                  <p>₹399 <span style="color:  rgb(0, 181, 58);">50% offer</span></p>
+                </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="card border-0 bg-light">
+                    <div class="card-body">
+                         <img src="https://images.bewakoof.com/t640/men-s-black-iron-man-of-war-graphic-printed-t-shirt-220650-1730990210-1.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <h6>Bewakoof®</h6>
+                    <p>Men's Black Iron Man Of War Graphic Pri</p>
+                    <p>₹299 <span style="color:  rgb(0, 181, 58);">60% offer</span></p>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 text-center">
+                    <div class="card border-0 bg-light">
+                      <div class="card-body">
+                           <img src="https://images.bewakoof.com/t640/men-s-white-all-over-printed-oversized-hoodies-644650-1730210156-1.jpg" class="img-fluid"  alt="...">
+                      </div>
+                      <h6>bewakoof x star wars</h6>
+                      <p>Men's White All Over Printed Oversized</p>
+                      <p>₹1322 <span style="color:  rgb(0, 181, 58);">15% offer</span></p>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="card border-0 bg-light">
+                        <div class="card-body">
+                             <img src="https://images.bewakoof.com/t640/men-s-green-white-color-block-oversized-hoodies-644609-1730291379-1.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <h6>Bewakoof®</h6>
+                        <p>Men's Green & White Color Block Oversi</p>
+                        <p>₹870 <span style="color:  rgb(0, 181, 58);">50% offer</span></p>
+                      </div>
+                      </div>
+                      <div class="col-lg-4 text-center">
+                        <div class="card border-0 bg-light">
+                          <div class="card-body">
+                               <img src="https://images.bewakoof.com/t640/men-s-orange-offline-typography-oversized-hoodies-597129-1726228295-1.jpg" class="img-fluid"  alt="...">
+                          </div>
+                          <h6>Bewakoof®</h6>
+                          <p>Men's Orange Offline Typography Oversiz</p>
+                          <p>₹766<span style="color:rgb(0, 181, 58);">  20% offer</span></p>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                          <div class="card border-0 bg-light">
+                            <div class="card-body">
+                                 <img src="https://images.bewakoof.com/t640/men-s-black-house-of-dragon-graphic-printed-oversized-hoodies-551015-1703750971-1.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <h6>bewakoof x house of the dragon</h6>
+                            <p>Men's Black House Of Dragon Graphic Pr</p>
+                            <p>₹418<span style="color:rgb(0, 181, 58);">  35% offer</span></p>
+                          </div>
+                          </div>
+                          <div class="col-lg-4 text-center">
+                            <div class="card border-0 bg-light">
+                              <div class="card-body">
+                                   <img src="https://images.bewakoof.com/t640/men-s-green-watching-you-change-colours-graphic-printed-oversized-t-shirt-592039-1715257718-1.jpg" class="img-fluid" alt="...">
+                              </div>
+                              <h6>Bewakoof®</h6>
+                              <p>Men's Green Watching You Change Colou</p>
+                              <p>₹250<span style="color:rgb(0, 181, 58);">  25% offer</span></p>
+                            </div>
+                            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    </section>
+          <section class="Contact" id="contactus">
+            <div class="container py-5">
+              <div class="col-lg-5 m-auto text-center">
+                <h1>Contact Us</h1>
+              <p></p>
+              </div>
+                <div class="row ">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" style="padding: 20px;" id="formGroupExampleInput" placeholder="Your name">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" style="padding: 20px;" id="formGroupExampleInput" placeholder="your email">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" style="padding: 20px;" id="formGroupExampleInput" placeholder="subject">
+                  </div>
+                  <div class="textarea mb-3">
+                    <textarea rows="5" cols="10" type="text" class="form-control" style="padding: 20px;" id="formGroupExampleInput"  placeholder="Message"> Message</textarea>
+                  </div>
+                </div>
+                <div class="content text-center">
+                <button type="button" class="btn1 btn-success">Sumbited</button>
+              </div>
+              </div>
+            </div>
+          </section>
+  
+  
 </body>
 </html>
